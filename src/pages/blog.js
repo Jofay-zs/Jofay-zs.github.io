@@ -3,7 +3,9 @@ import General from "../layouts/general";
 
 const blog = () => {
   return <General pageTitle={"Jofay's blog"}>
-    This is the log
+    <main>
+      This is the blog
+    </main>
   </General>;
 };
 
