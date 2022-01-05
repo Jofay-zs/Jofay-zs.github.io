@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "gatsby";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
@@ -12,6 +11,7 @@ import {
   faMoon,
   faBlind,
 } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "gatsby";
 
 const Navbar = ({ currentPage }) => {
   const navigationList = () => {
@@ -19,7 +19,7 @@ const Navbar = ({ currentPage }) => {
       return (
         <ul className="w-full flex justify-end">
           <li>
-            <a href="#home">Back to home</a>
+            <Link to="/">Back to home</Link>
           </li>
         </ul>
       );
@@ -48,9 +48,9 @@ const Navbar = ({ currentPage }) => {
       return (
         <div className="flex w-full justify-around text-xl">
           <div className="border-b-2 border-gray-100">
-            <a href="#home">
+            <Link to="/">
               <FontAwesomeIcon icon={faHome} />
-            </a>
+            </Link>
           </div>
           <div className="border-b-2 border-gray-100">
             <FontAwesomeIcon icon={faMoon} />
@@ -89,7 +89,7 @@ const Navbar = ({ currentPage }) => {
   };
   return (
     <nav className="w-full h-full max-h-screen fixed top-0 z-50">
-      <section className="flex justify-center items-center sm:grid w-full h-auto py-5 sm:grid-cols-3 sm:px-3 md:px-18 lg:px-28 lg:grid-cols-2">
+      <section className="flex justify-center items-center sm:grid w-full h-auto py-5 sm:grid-cols-3 sm:px-3 md:px-18 lg:px-28 lg:grid-cols-2 bg-gray-900/75">
         <div className="flex w-full h-auto text-2xl justify-center items-center">
           <div className="flex">
             import{" "}
@@ -112,22 +112,31 @@ const Navbar = ({ currentPage }) => {
         <div>
           <ul className="text-3xl">
             <li>
-              <Link to="https://github.com/Jofay-zs" target="_blank">
+              <a
+                href="https://github.com/Jofay-zs"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FontAwesomeIcon icon={faGithub} />
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
-                to="https://www.linkedin.com/in/jofay-zs-174369217"
+              <a
+                href="https://www.linkedin.com/in/jofay-zs-174369217"
                 target="_blank"
+                rel="noreferrer"
               >
                 <FontAwesomeIcon icon={faLinkedin} />
-              </Link>
+              </a>
             </li>
             <li>
-              <Link to="https://twitter.com/Jofay_zs" target="_blank">
+              <a
+                href="https://twitter.com/Jofay_zs"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FontAwesomeIcon icon={faTwitter} />
-              </Link>
+              </a>
             </li>
             <li>
               <a href="mailto:jofayzs19@gmail.com">
@@ -137,7 +146,7 @@ const Navbar = ({ currentPage }) => {
           </ul>
         </div>
       </section>
-      <section className="sm:hidden fixed bottom-0 j py-4 w-full h-20">
+      <section className="sm:hidden fixed bottom-0 j py-4 w-full h-16 bg-gray-900/75">
         {navigationListSmall()}
       </section>
     </nav>

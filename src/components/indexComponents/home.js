@@ -19,10 +19,10 @@ const Home = () => {
         <div className="w-20 h-1 flex bg-gradient-to-r from-red-500 to-fuchsia-500"></div>
         <div>
           <p className="text-3xl mb-2">Hi!</p>
-          <p className="flex text-4xl my-2">
+          <div className="flex text-4xl my-2">
             I'm <h1 className="font-bold ml-2">Jofay</h1>
-          </p>
-          <p className="text-2xl font-bold">{`Web developer & Study lover`}</p>
+          </div>
+          <p className="text-2xl font-bold">Web developer and Study lover</p>
         </div>
       </div>
     </section>
