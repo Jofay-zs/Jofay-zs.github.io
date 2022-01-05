@@ -1,8 +1,8 @@
 import React from "react";
-import General from "../layouts/general";
-import "../styles/global.css";
+import General from "../../layouts/general";
+import "../../styles/global.css";
 import { graphql } from "gatsby";
-import Post from "../components/blogComponents/post";
+import Post from "../../components/blogComponents/post";
 
 const blog = ({ data }) => {
   return (
@@ -11,7 +11,7 @@ const blog = ({ data }) => {
         {data.allMdx.nodes.map((p) => {
           return (
             <Post
-              postBody={p.body}
+              postLink={p.slug}
               postTitle={p.frontmatter.title}
               postDescription={p.frontmatter.description}
               postDate={p.frontmatter.datePublished}
@@ -33,7 +33,7 @@ export const getPosts = graphql`
           title
         }
         id
-        body
+        slug
       }
     }
   }

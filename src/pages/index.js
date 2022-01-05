@@ -3,6 +3,7 @@ import "../styles/global.css";
 import General from "../layouts/general";
 import Home from "../components/indexComponents/home";
 import About from "../components/indexComponents/about";
+import { Link } from "gatsby";
 
 const index = () => {
   return (
