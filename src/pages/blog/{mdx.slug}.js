@@ -1,8 +1,8 @@
 import React from "react";
-import General from "../../layouts/General";
 import { graphql } from "gatsby";
 import { MDXRenderer } from "gatsby-plugin-mdx";
 import "../../styles/global.css";
+import General from "../../layouts/General";
 
 const BlogPost = ({ data }) => {
   return (
