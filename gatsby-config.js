@@ -22,7 +22,9 @@ module.exports = {
     {
       resolve: "gatsby-source-strapi",
       options: {
-        apiURL: process.env.API_URL || "http://localhost:1337",
+        apiURL:
+          "https://sheltered-plateau-01320.herokuapp.com" ||
+          "http://localhost:1337",
         // collectionTypes: ["projects", "studies"],
         collectionTypes: [
           {
