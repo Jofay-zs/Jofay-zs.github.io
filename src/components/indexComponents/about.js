@@ -86,33 +86,3 @@ const About = () => {
 };
 
 export default About;
-
-// <div className="grid grid-cols-6">
-//   <div className="flex w-full h-full justify-center items-center">
-//     <svg
-//       viewBox="0 0 24 24"
-//       xmlns="http://www.w3.org/2000/svg"
-//       width={25}
-//     >
-//       <path
-//         d="m12 17.56 4.07-1.13.55-6.1H9.38L9.2 8.3h7.6l.2-1.99H7l.56 6.01h6.89l-.23 2.58-2.22.6-2.22-.6-.14-1.66h-2l.29 3.19L12 17.56M4.07 3h15.86L18.5 19.2 12 21l-6.5-1.8L4.07 3z"
-//         fill="#e44d26"
-//       />
-//     </svg>
-//     <span className="font-bold ml-2">HTML</span>
-//   </div>
-//   <div className="flex w-full h-full justify-center items-center">
-//     <svg
-//       viewBox="0 0 24 24"
-//       xmlns="http://www.w3.org/2000/svg"
-//       width={25}
-//     >
-//       <path
-//         d="m5 3-.65 3.34h13.59L17.5 8.5H3.92l-.66 3.33h13.59l-.76 3.81-5.48 1.81-4.75-1.81.33-1.64H2.85l-.79 4 7.85 3 9.05-3 1.2-6.03.24-1.21L21.94 3H5z"
-//         fill="#42a5f5"
-//       />
-//     </svg>
-//     <span className="font-bold ml-2">CSS</span>
-//   </div>
-//   <img src={jsSvg} alt="" />
-// </div>

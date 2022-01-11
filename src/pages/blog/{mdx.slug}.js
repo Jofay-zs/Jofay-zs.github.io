@@ -1,5 +1,5 @@
 import React from "react";
-import General from "../../layouts/general";
+import General from "../../layouts/General";
 import { graphql } from "gatsby";
 import { MDXRenderer } from "gatsby-plugin-mdx";
 import "../../styles/global.css";
