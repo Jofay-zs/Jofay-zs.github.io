@@ -1,5 +1,5 @@
 import React from "react";
-import CircleNavigation from "./SpeedDial";
+import CircleNavigation from "./speedial";
 import { faCircle } from "@fortawesome/free-solid-svg-icons";
 import {
   faGithub,

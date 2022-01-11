@@ -28,7 +28,7 @@ module.exports = {
         // collectionTypes: ["projects", "studies"],
         collectionTypes: [
           {
-            name: `projects`,
+            name: `projects`, 
             endpoint: "api/projects",
           },
           {

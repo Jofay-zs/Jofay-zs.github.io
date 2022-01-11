@@ -1,7 +1,7 @@
 import React from "react";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/navbar";
 import { graphql, useStaticQuery } from "gatsby";
-import Contact from "../components/Contact";
+import Contact from "../components/contact";
 
 const General = ({ children, pageTitle }) => {
   const data = useStaticQuery(graphql`
@@ -24,4 +24,4 @@ const General = ({ children, pageTitle }) => {
   );
 };
 
-export { General };
+export default General;

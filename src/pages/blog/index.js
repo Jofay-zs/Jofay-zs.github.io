@@ -1,5 +1,5 @@
 import React from "react";
-import { General } from "../../layouts/General";
+import General from "../../layouts/general";
 import "../../styles/global.css";
 import { graphql } from "gatsby";
 import Post from "../../components/blogComponents/post";
