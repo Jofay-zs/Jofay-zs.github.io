@@ -1,8 +1,8 @@
 import React from "react";
 import "../styles/global.css";
-import General from "../layouts/General";
-import Home from "../components/indexComponents/Home";
-import About from "../components/indexComponents/About";
+import { General } from "../layouts/General";
+import { Home } from "../components/indexComponents/Home";
+import { About } from "../components/indexComponents/About";
 
 const Index = () => {
   return (

@@ -1,4 +1,4 @@
-import { graphql, StaticQuery, useStaticQuery } from "gatsby";
+import { graphql, useStaticQuery } from "gatsby";
 import React, { useState } from "react";
 import { StaticImage } from "gatsby-plugin-image";
 

@@ -70,7 +70,10 @@ const About = () => {
               <section className="grid grid-cols-2 gap-3 mt-5 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
                 {skills.map((s) => {
                   return (
-                    <div className="flex w-full h-full justify-center items-center" key={s.skillName}>
+                    <div
+                      className="flex w-full h-full justify-center items-center"
+                      key={s.skillName}
+                    >
                       {s.skillImage}
                       <span className="font-bold">{s.skillName}</span>
                     </div>
@@ -85,4 +88,4 @@ const About = () => {
   );
 };
 
-export default About;
+export { About };

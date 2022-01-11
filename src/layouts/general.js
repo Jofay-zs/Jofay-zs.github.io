@@ -24,4 +24,4 @@ const General = ({ children, pageTitle }) => {
   );
 };
 
-export default General;
+export { General };
