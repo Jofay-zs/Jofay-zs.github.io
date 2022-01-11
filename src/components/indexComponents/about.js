@@ -1,35 +1,118 @@
-import React from "react";
+import React, { useState } from "react";
+import {
+  JsSVG,
+  HtmlSVG,
+  CssSVG,
+  NodejsSVG,
+  TailwindSVG,
+  TypeScriptSVG,
+  ReactSVG,
+  GitSVG,
+  GatsbySVG,
+  GraphqlSVG,
+} from "../../images/svg.js";
 
 const About = () => {
+  const [whatInformation, setWhatInformation] = useState(true);
+
+  const skills = [
+    { skillName: "JavaScript", skillImage: <JsSVG /> },
+    { skillName: "HTML", skillImage: <HtmlSVG /> },
+    { skillName: "CSS", skillImage: <CssSVG /> },
+    { skillName: "Nodejs", skillImage: <NodejsSVG /> },
+    { skillName: "TailwindCSS", skillImage: <TailwindSVG /> },
+    { skillName: "Graphql", skillImage: <GraphqlSVG /> },
+    { skillName: "TypeScript", skillImage: <TypeScriptSVG /> },
+    { skillName: "React", skillImage: <ReactSVG /> },
+    { skillName: "Git", skillImage: <GitSVG /> },
+    { skillName: "Gatsby", skillImage: <GatsbySVG /> },
+    { skillName: "Scrum ", skillImage: "🔁" },
+    { skillName: "English", skillImage: "🔡" },
+    { skillName: "Spanish", skillImage: "🔠" },
+  ];
+
   return (
-    <section className="flex h-screen min-h-screen w-full px-2 sm:px-10" id="about">
-      <div className="absolute">
-        <div className="absolute top-10 left-0 font-extrabold text-6xl sm:text-9xl opacity-5">
-          About
-        </div>
-      </div>
-      <div className="w-full h-full flex flex-col md:grid md:grid-cols-4 items-center justify-center">
-        <section className="md:col-span-1 w-full h-auto flex justify-center items-center mb-5">
-          <ul className="text-2xl text-center grid grid-cols-2 sm:flex sm:flex-row md:flex-col justify-around w-full">
-            <li className="my-2">Profile</li>
-            <li className="my-2">Skills</li>
-            <li className="my-2">Hobbies</li>
-            <li className="my-2">Studies</li>
-          </ul>
-        </section>
-        <section className="md:col-span-3 w-full h-auto flex flex-col justify-center">
-          <header className="font-bold text-4xl mb-5">Profile</header>
-          <div className="w-full h-1 bg-gradient-to-r from-red-500 to-fuchsia-500" />
-          <div className="mt-3 text-lg">
-            👋 My name is Jofay Zhan Segura, I'm from Colombia. I'm a web
-            developer, with knowledge in both front-end and back-end. Passionate
-            about code, tech and always learning 😎. I like to develop projects,
-            face challenges and share my knowledge. 😀
+    <main>
+      <section className="flex h-screen min-h-screen w-full" id="about">
+        <div className="absolute">
+          <div className="absolute top-10 left-0 font-extrabold text-6xl sm:text-9xl opacity-5 capitalize">
+            About
           </div>
-        </section>
-      </div>
-    </section>
+        </div>
+        <div className="w-full h-full flex flex-col md:grid md:grid-cols-4 items-center justify-center">
+          <section className="md:col-span-1 w-full h-auto flex justify-center items-center mb-5">
+            <ul className="text-2xl text-center grid grid-cols-2 sm:flex sm:flex-row md:flex-col justify-around w-full">
+              <li className="my-2">
+                <button onClick={() => setWhatInformation(true)}>
+                  Profile
+                </button>
+              </li>
+              <li className="my-2">
+                <button onClick={() => setWhatInformation(false)}>
+                  Skills
+                </button>
+              </li>
+            </ul>
+          </section>
+          <section className="md:col-span-3 w-full h-auto flex flex-col justify-center">
+            <header className="font-bold text-4xl mb-5 capitalize">
+              {whatInformation ? "Profile" : "Skills"}
+            </header>
+            <div className="w-full h-1 bg-gradient-to-r from-red-500 to-fuchsia-500" />
+            {whatInformation ? (
+              <div className="mt-5 text-lg">
+                👋 My name is Jofay Zhan Segura, I'm from Colombia. I'm a web
+                developer, with knowledge in both front-end and back-end.
+                Passionate about code, tech and always learning 😎. I like to
+                develop projects, face challenges and share my knowledge. 😀
+              </div>
+            ) : (
+              <section className="grid grid-cols-2 gap-3 mt-5 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
+                {skills.map((s) => {
+                  return (
+                    <div className="flex w-full h-full justify-center items-center" key={s.skillName}>
+                      {s.skillImage}
+                      <span className="font-bold">{s.skillName}</span>
+                    </div>
+                  );
+                })}
+              </section>
+            )}
+          </section>
+        </div>
+      </section>
+    </main>
   );
 };
 
 export default About;
+
+// <div className="grid grid-cols-6">
+//   <div className="flex w-full h-full justify-center items-center">
+//     <svg
+//       viewBox="0 0 24 24"
+//       xmlns="http://www.w3.org/2000/svg"
+//       width={25}
+//     >
+//       <path
+//         d="m12 17.56 4.07-1.13.55-6.1H9.38L9.2 8.3h7.6l.2-1.99H7l.56 6.01h6.89l-.23 2.58-2.22.6-2.22-.6-.14-1.66h-2l.29 3.19L12 17.56M4.07 3h15.86L18.5 19.2 12 21l-6.5-1.8L4.07 3z"
+//         fill="#e44d26"
+//       />
+//     </svg>
+//     <span className="font-bold ml-2">HTML</span>
+//   </div>
+//   <div className="flex w-full h-full justify-center items-center">
+//     <svg
+//       viewBox="0 0 24 24"
+//       xmlns="http://www.w3.org/2000/svg"
+//       width={25}
+//     >
+//       <path
+//         d="m5 3-.65 3.34h13.59L17.5 8.5H3.92l-.66 3.33h13.59l-.76 3.81-5.48 1.81-4.75-1.81.33-1.64H2.85l-.79 4 7.85 3 9.05-3 1.2-6.03.24-1.21L21.94 3H5z"
+//         fill="#42a5f5"
+//       />
+//     </svg>
+//     <span className="font-bold ml-2">CSS</span>
+//   </div>
+//   <img src={jsSvg} alt="" />
+// </div>
