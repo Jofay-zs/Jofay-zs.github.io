@@ -1,9 +1,9 @@
 import React from "react";
 import "../styles/global.css";
 import General from "../layouts/general";
-import Home from "../components/indexComponents/home";
-import Study from "../components/indexComponents/study";
-import About from "../components/indexComponents/about";
+import Home from "../components/index_components/home";
+import Study from "../components/index_components/study";
+import About from "../components/index_components/about";
 
 const Index = () => {
   return (
