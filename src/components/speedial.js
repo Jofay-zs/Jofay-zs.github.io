@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { faCode, faHome } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faParagraph } from "@fortawesome/free-solid-svg-icons";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 
 const actions = [
@@ -15,11 +14,7 @@ const actions = [
   },
   {
     icon: <FontAwesomeIcon className="text-fuchsia-500/75" icon={faCode} />,
-    name: "projects",
-  },
-  {
-    icon: <FontAwesomeIcon className="text-fuchsia-500" icon={faParagraph} />,
-    name: "blog",
+    name: "studies",
   },
 ];
 

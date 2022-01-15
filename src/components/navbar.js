@@ -1,7 +1,5 @@
 import React from "react";
 
-import { Link } from "gatsby";
-
 const Navbar = () => {
   return (
     <nav className="w-auto h-auto max-h-screen fixed top-0 z-50">
@@ -23,11 +21,11 @@ const Navbar = () => {
               <a href="#about">About</a>
             </li>
             <li>
-              <a href="#projects">Projects</a>
+              <a href="#studies">Studies</a>
             </li>
-            <li>
+            {/* <li>
               <Link to="/blog">Blog</Link>
-            </li>
+            </li> */}
           </ul>
         </div>
       </section>

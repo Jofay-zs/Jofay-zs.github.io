@@ -1,6 +1,5 @@
 import React from "react";
 import CircleNavigation from "./speedial";
-import { faCircle } from "@fortawesome/free-solid-svg-icons";
 import {
   faGithub,
   faLinkedin,
@@ -13,14 +12,8 @@ const Contact = () => {
   return (
     <aside className="w-20 h-auto max-h-screen z-50 fixed top-0">
       <section className="hidden h-screen px-4 sm:flex flex-col justify-center items-center w-20">
-        <div className="text-2xl">
-          <FontAwesomeIcon icon={faCircle} />
-        </div>
-        <div className="w-1 flex justify-center items-center my-5">
-          <div className="w-1/2 h-20 bg-gradient-to-b from-red-500 to-fuchsia-500"></div>
-        </div>
         <div>
-          <ul className="text-3xl">
+          <ul className="text-3xl flex flex-col w-full justify-center items-center">
             <li>
               <a
                 href="https://github.com/Jofay-zs"
@@ -39,6 +32,9 @@ const Contact = () => {
                 <FontAwesomeIcon icon={faLinkedin} />
               </a>
             </li>
+            <div className="w-1 flex justify-center items-center my-5">
+              <div className="w-1/2 h-20 bg-gradient-to-b from-red-500 to-fuchsia-500"></div>
+            </div>
             <li>
               <a
                 href="https://twitter.com/Jofay_zs"
