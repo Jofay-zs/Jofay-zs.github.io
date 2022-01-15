@@ -1,6 +1,27 @@
 import { graphql, useStaticQuery } from "gatsby";
 import React, { useState } from "react";
 
+const getStudies = graphql`
+  query getStudies {
+    allStrapiStudies(
+      sort: { order: ASC, fields: data___attributes___publishedAt }
+    ) {
+      nodes {
+        data {
+          id
+          attributes {
+            description
+            endDate(formatString: "Y/M/D")
+            startDate(formatString: "Y/M/D")
+            title
+            urlCertificate
+          }
+        }
+      }
+    }
+  }
+`;
+
 const Study = () => {
   const data = useStaticQuery(getStudies);
   const [current, setCurrent] = useState(0);
@@ -108,26 +129,5 @@ const Study = () => {
     </section>
   );
 };
-
-const getStudies = graphql`
-  query getStudies {
-    allStrapiStudies(
-      sort: { order: ASC, fields: data___attributes___publishedAt }
-    ) {
-      nodes {
-        data {
-          id
-          attributes {
-            description
-            endDate(formatString: "Y/M/D")
-            startDate(formatString: "Y/M/D")
-            title
-            urlCertificate
-          }
-        }
-      }
-    }
-  }
-`;
 
 export default Study;
