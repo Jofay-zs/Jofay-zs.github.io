@@ -52,9 +52,9 @@ const Contact = () => {
           </ul>
         </div>
       </section>
-      <section className="sm:hidden">
+      {/* <section className="sm:hidden">
         <CircleNavigation />
-      </section>
+      </section> */}
     </aside>
   );
 };

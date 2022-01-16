@@ -8,7 +8,7 @@ import About from "../components/index_components/about";
 const Index = () => {
   return (
     <General>
-      <main className="h-auto min-h-screen max-w-full flex flex-col w-full">
+      <main className="h-auto min-h-screen max-w-full flex flex-col w-full px-5 sm:px-20 lg:px-32">
         <Home />
         <About />
         <Study />
