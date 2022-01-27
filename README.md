@@ -19,4 +19,4 @@ Some resources that I used to develop this project was:
 
 ## Problems
 
-At the moment that I'm writing this I have a problem with my project, practically the problem isn't mine, the problem is from a gatsby plugin that doesn't support gatsby v4. This plugin 'gatsby-source-strapi' is the plugin that allow us to connect our gatsby aplication with strapi(CMS), but for some reason that I don't understand, when you try to query images, don't even appear, so to quickly fix it I decide to wait for the new upload and meanwhile use local images
+At the moment that I'm writing this I have a problem with my project, practically the problem isn't mine, the problem is from a gatsby plugin that doesn't support gatsby v4. This plugin 'gatsby-source-strapi' is the plugin that allow us to connect our gatsby aplication with strapi(CMS), but for some reason that I don't understand, when you try to query images, don't even appear, so to quickly fix it I decide to wait for the new upload and meanwhile use local images.
