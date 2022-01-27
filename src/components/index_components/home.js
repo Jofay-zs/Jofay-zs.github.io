@@ -9,7 +9,7 @@ const Home = () => {
     >
       <div className="absolute top-0 left-0 bg-cover z-10 h-full w-full">
         <StaticImage
-          className="bg-cover h-screen w-screen"
+          className="bg-cover h-screen w-screen bg-fixed"
           alt="A nice photo taken in Gablenz, Germany. By Martin Damboldt (Pexels)"
           src="https://images.pexels.com/photos/943096/pexels-photo-943096.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
         />

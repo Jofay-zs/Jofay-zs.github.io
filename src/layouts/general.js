@@ -21,7 +21,7 @@ const General = ({ children, pageTitle }) => {
       <title>{pageTitle ? pageTitle : data.site.siteMetadata.title}</title>
       {/* <Navbar /> */}
       <Contact />
-      <Parallax pages={3}>
+      <Parallax pages={4}>
         <ParallaxLayer>
           <div className="z-20">{children}</div>
         </ParallaxLayer>

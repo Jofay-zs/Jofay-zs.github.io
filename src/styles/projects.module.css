@@ -1,0 +1,45 @@
+.card_list {
+  display: flex;
+  padding: 3rem;
+  overflow-x: scroll;
+}
+
+.card {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  height: 350px;
+  width: 250px;
+  padding: 1rem;
+
+  border-radius: 16px;
+  background: #17141d;
+  box-shadow: -1rem 0 3rem #000;
+
+  transition: .2s;
+}
+
+.card:hover {
+  transform: translateY(-1rem);
+}
+
+.card:hover ~ .card {
+  transform: translateX(60px);
+}
+
+.card:not(:first-child) {
+  margin-left: -50px;
+}
+
+.card_list::-webkit-scrollbar {
+  height: 12px;
+}
+
+.card_list::-webkit-scrollbar-thumb {
+  background: #4b4b4b;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-image: linear-gradient(#ef4444, #d946ef);
+}

@@ -43,7 +43,7 @@ const Study = () => {
                   key={s.attributes.title}
                   className={`${
                     current === index && "bg-gradient-to-r text-transparent"
-                  } truncate text-lg font-bold w-auto hover:bg-gradient-to-r from-red-500 to-fuchsia-500 bg-clip-text hover:text-transparent my-1`}
+                  } truncate text-lg w-auto hover:bg-gradient-to-r from-red-500 to-fuchsia-500 bg-clip-text hover:text-transparent my-1`}
                   onClick={() => {
                     setCurrent(index);
                     setIsOpen(false);
@@ -68,7 +68,7 @@ const Study = () => {
                     key={s.attributes.title}
                     className={`${
                       current === index && "bg-gradient-to-r text-transparent"
-                    } truncate text-lg font-bold w-auto hover:bg-gradient-to-r from-red-500 to-fuchsia-500 bg-clip-text hover:text-transparent my-1`}
+                    } truncate text-lg w-auto hover:bg-gradient-to-r from-red-500 to-fuchsia-500 bg-clip-text hover:text-transparent my-1`}
                     onClick={() => {
                       setCurrent(index);
                       setIsOpen(false);

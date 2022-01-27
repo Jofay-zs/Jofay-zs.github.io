@@ -41,10 +41,18 @@ const About = () => {
       <div className="w-full h-full flex flex-col md:grid md:grid-cols-4 items-center justify-center">
         <section className="md:col-span-1 w-full h-auto flex justify-center items-center mb-5">
           <ul className="text-2xl text-center grid grid-cols-2 sm:flex sm:flex-row md:flex-col justify-around w-full">
-            <li className="my-2">
+            <li
+              className={`${
+                whatInformation ? "bg-gradient-to-r text-transparent" : ""
+              } my-2 hover:bg-gradient-to-r from-red-500 to-fuchsia-500 bg-clip-text hover:text-transparent`}
+            >
               <button onClick={() => setWhatInformation(true)}>Profile</button>
             </li>
-            <li className="my-2">
+            <li
+              className={`${
+                whatInformation ? "" : "bg-gradient-to-r text-transparent"
+              } my-2 hover:bg-gradient-to-r from-red-500 to-fuchsia-500 bg-clip-text hover:text-transparent`}
+            >
               <button onClick={() => setWhatInformation(false)}>Skills</button>
             </li>
           </ul>

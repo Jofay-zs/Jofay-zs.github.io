@@ -1,5 +1,4 @@
 import React from "react";
-import CircleNavigation from "./speedial";
 import {
   faGithub,
   faLinkedin,
@@ -19,6 +18,7 @@ const Contact = () => {
                 href="https://github.com/Jofay-zs"
                 target="_blank"
                 rel="noreferrer"
+                className="hover:text-gray-100/50"
               >
                 <FontAwesomeIcon icon={faGithub} />
               </a>
@@ -28,6 +28,7 @@ const Contact = () => {
                 href="https://www.linkedin.com/in/jofay-zs-174369217"
                 target="_blank"
                 rel="noreferrer"
+                className="hover:text-gray-100/50"
               >
                 <FontAwesomeIcon icon={faLinkedin} />
               </a>
@@ -40,12 +41,16 @@ const Contact = () => {
                 href="https://twitter.com/Jofay_zs"
                 target="_blank"
                 rel="noreferrer"
+                className="hover:text-gray-100/50"
               >
                 <FontAwesomeIcon icon={faTwitter} />
               </a>
             </li>
             <li>
-              <a href="mailto:jofayzs19@gmail.com">
+              <a
+                href="mailto:jofayzs19@gmail.com"
+                className="hover:text-gray-100/50"
+              >
                 <FontAwesomeIcon icon={faEnvelope} />
               </a>
             </li>
