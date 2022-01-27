@@ -81,6 +81,38 @@ const General = ({ children, pageTitle }) => {
         >
           <Hexagon styles="absolute left-52 fill-transparent stroke-fuchsia-500 w-24 h-24 opacity-25" />
         </ParallaxLayer>
+        <ParallaxLayer
+          offset={3}
+          speed={0.5}
+          style={{ pointerEvents: "none" }}
+          className="-z-10"
+        >
+          <Hexagon styles="absolute right-48 fill-transparent stroke-red-500 w-36 h-36 opacity-25" />
+        </ParallaxLayer>
+        <ParallaxLayer
+          offset={3.2}
+          speed={1.8}
+          style={{ pointerEvents: "none" }}
+          className="-z-10"
+        >
+          <Hexagon styles="absolute left-96 fill-transparent stroke-red-500 w-32 h-32 opacity-25" />
+        </ParallaxLayer>
+        <ParallaxLayer
+          offset={3.5}
+          speed={0.7}
+          style={{ pointerEvents: "none" }}
+          className="-z-10"
+        >
+          <Hexagon styles="absolute right-24 fill-transparent stroke-fuchsia-500 w-40 h-40 opacity-25" />
+        </ParallaxLayer>
+        <ParallaxLayer
+          offset={3.7}
+          speed={1}
+          style={{ pointerEvents: "none" }}
+          className="-z-10"
+        >
+          <Hexagon styles="absolute left-0 fill-transparent stroke-fuchsia-500 w-80 h-80 opacity-25" />
+        </ParallaxLayer>
       </Parallax>
     </div>
   );

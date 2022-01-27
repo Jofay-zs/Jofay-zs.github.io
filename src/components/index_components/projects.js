@@ -33,7 +33,7 @@ const Projects = () => {
         </div>
       </div>
       <div className="flex w-full h-full justify-center items-center pt-10">
-        <section className={`${card_list}`}>
+        <section className={`${card_list} p-7 sm:p-12`}>
           {data.allStrapiProjects.nodes[0].data.map((p) => {
             return (
               <article key={p.attributes.title} className={`${card}`}>
@@ -53,12 +53,16 @@ const Projects = () => {
                     <a
                       href={p.attributes.demo}
                       className="mr-4 hover:text-gray-100/50"
+                      target="_blank"
+                      rel="noreferrer"
                     >
                       Demo
                     </a>
                     <a
                       href={p.attributes.github_url}
                       className=" hover:text-gray-100/50"
+                      target="_blank"
+                      rel="noreferrer"
                     >
                       <FontAwesomeIcon
                         icon={faGithub}

@@ -17,3 +17,7 @@
 ::-webkit-scrollbar-thumb:hover {
   background-image: linear-gradient(#ef4444, #d946ef);
 }
+
+::-webkit-scrollbar-thumb:active {
+  background-image: linear-gradient(#ef4444, #d946ef);
+}
