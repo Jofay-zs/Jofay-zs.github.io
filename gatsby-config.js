@@ -12,14 +12,6 @@ module.exports = {
     "gatsby-plugin-postcss",
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
-    "gatsby-plugin-mdx",
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: `blog`,
-        path: `${__dirname}/src/blog/`,
-      },
-    },
     {
       resolve: "gatsby-source-strapi",
       options: {
