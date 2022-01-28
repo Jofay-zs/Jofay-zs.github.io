@@ -40,6 +40,10 @@
   border-radius: 10px;
 }
 
+.card_list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
 .card_list::-webkit-scrollbar-thumb:hover {
   background-image: linear-gradient(#ef4444, #d946ef);
 }

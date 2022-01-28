@@ -18,7 +18,7 @@ const Contact = () => {
                 href="https://github.com/Jofay-zs"
                 target="_blank"
                 rel="noreferrer"
-                className="hover:text-gray-100/50"
+                className="hover:text-gray-100/50 hover:text-2xl"
               >
                 <FontAwesomeIcon icon={faGithub} />
               </a>
@@ -28,7 +28,7 @@ const Contact = () => {
                 href="https://www.linkedin.com/in/jofay-zs-174369217"
                 target="_blank"
                 rel="noreferrer"
-                className="hover:text-gray-100/50"
+                className="hover:text-gray-100/50 hover:text-2xl"
               >
                 <FontAwesomeIcon icon={faLinkedin} />
               </a>
@@ -41,7 +41,7 @@ const Contact = () => {
                 href="https://twitter.com/Jofay_zs"
                 target="_blank"
                 rel="noreferrer"
-                className="hover:text-gray-100/50"
+                className="hover:text-gray-100/50 hover:text-2xl"
               >
                 <FontAwesomeIcon icon={faTwitter} />
               </a>
@@ -49,7 +49,7 @@ const Contact = () => {
             <li>
               <a
                 href="mailto:jofayzs19@gmail.com"
-                className="hover:text-gray-100/50"
+                className="hover:text-gray-100/50 hover:text-2xl"
               >
                 <FontAwesomeIcon icon={faEnvelope} />
               </a>
@@ -57,9 +57,6 @@ const Contact = () => {
           </ul>
         </div>
       </section>
-      {/* <section className="sm:hidden">
-        <CircleNavigation />
-      </section> */}
     </aside>
   );
 };

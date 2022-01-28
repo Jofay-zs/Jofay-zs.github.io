@@ -1,27 +1,33 @@
 import React from "react";
-// import Navbar from "../components/navbar";
 import { graphql, useStaticQuery } from "gatsby";
 import Contact from "../components/contact";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import { Hexagon } from "../images/svg";
+import Footer from "../components/footer";
+import { Helmet } from "react-helmet";
 
-const General = ({ children, pageTitle }) => {
-  const data = useStaticQuery(graphql`
-    query {
-      site {
-        siteMetadata {
-          title
-          description
-        }
+const getSiteMetaData = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+        description
       }
     }
-  `);
+  }
+`;
+
+const General = ({ children, pageTitle }) => {
+  const data = useStaticQuery(getSiteMetaData);
+
   return (
     <div className="w-auto h-auto min-h-screen min-w-screen max-w-screen bg-main text-gray-100">
-      <title>{pageTitle ? pageTitle : data.site.siteMetadata.title}</title>
-      {/* <Navbar /> */}
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>{pageTitle ? pageTitle : data.site.getSiteMetaData.title}</title>
+      </Helmet>
       <Contact />
-      <Parallax pages={4}>
+      <Parallax pages={4.2}>
         <ParallaxLayer>
           <div className="z-20">{children}</div>
         </ParallaxLayer>
@@ -112,6 +118,9 @@ const General = ({ children, pageTitle }) => {
           className="-z-10"
         >
           <Hexagon styles="absolute left-0 fill-transparent stroke-fuchsia-500 w-80 h-80 opacity-25" />
+        </ParallaxLayer>
+        <ParallaxLayer offset={4}>
+          <Footer />
         </ParallaxLayer>
       </Parallax>
     </div>
