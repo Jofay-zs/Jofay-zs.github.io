@@ -2,6 +2,7 @@ import { Link } from "gatsby";
 import * as React from "react";
 import { Error404 } from "../images/svg";
 import { Helmet } from "react-helmet";
+import "../styles/global.css";
 
 const NotFoundPage = () => {
   return (
