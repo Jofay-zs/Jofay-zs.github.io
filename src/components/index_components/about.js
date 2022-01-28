@@ -64,7 +64,7 @@ const About = () => {
           <div className="w-full h-1 bg-gradient-to-r from-red-500 to-fuchsia-500" />
           {whatInformation ? (
             <div className="mt-5 text-lg">
-              👋 My name is Jofay Zhan Segura, I'm from Colombia. I'm a web
+              👋 My name is Jofay, I'm from Colombia. I'm a web
               developer, with knowledge in both front-end and back-end.
               Passionate about code, tech and always learning 😎. I like to
               develop projects, face challenges and share my knowledge. 😀

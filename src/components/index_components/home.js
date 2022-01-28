@@ -22,7 +22,9 @@ const Home = () => {
           <div className="flex text-4xl my-2">
             I am <h1 className="font-bold ml-2">Jofay</h1>
           </div>
-          <p className="text-2xl font-bold">Web developer and Study lover</p>
+          <p className="text-2xl font-bold">
+            Web developer and learning enthusiast
+          </p>
         </div>
       </div>
     </section>
