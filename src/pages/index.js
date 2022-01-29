@@ -9,12 +9,10 @@ import Projects from "../components/index_components/projects";
 const Index = () => {
   return (
     <General pageTitle="Jofay-zs | Home">
-      <main className="h-auto min-h-screen max-w-full flex flex-col w-full px-5 sm:px-20 lg:px-32">
-        <Home />
-        <About />
-        <Study />
-        <Projects />
-      </main>
+      <Home />
+      <About />
+      <Study />
+      <Projects />
     </General>
   );
 };
