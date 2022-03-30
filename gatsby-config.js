@@ -15,7 +15,8 @@ module.exports = {
     {
       resolve: "gatsby-source-graphcms",
       options: {
-        endpoint: process.env.GRAPHCMS_ENDPOINT,
+        endpoint:
+          "https://api-us-west-2.graphcms.com/v2/cl0zylzru5fn401xmg9ez11zu/master",
       },
     },
     {
