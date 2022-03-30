@@ -2,6 +2,7 @@ import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
 import Contact from "../components/contact";
 import Footer from "../components/footer";
+import Navbar from "../components/navbar";
 import { Helmet } from "react-helmet";
 
 const getSiteMetaData = graphql`
@@ -9,7 +10,6 @@ const getSiteMetaData = graphql`
     site {
       siteMetadata {
         title
-        description
       }
     }
   }
@@ -19,7 +19,10 @@ const General = ({ children, pageTitle }) => {
   const data = useStaticQuery(getSiteMetaData);
 
   return (
-    <div className="h-auto min-h-screen w-auto min-w-screen max-w-screen bg-main text-gray-100 pb-12">
+    <div
+      className="h-auto min-h-screen w-auto min-w-screen max-w-screen bg-main text-gray-100 pb-12"
+      id="background"
+    >
       <Helmet>
         <meta charSet="utf-8" />
         <title>{pageTitle ? pageTitle : data.site.getSiteMetaData.title}</title>
@@ -33,8 +36,12 @@ const General = ({ children, pageTitle }) => {
         />
         <meta name="author" content="Jofay-zs" />
       </Helmet>
+      <div id="stars1"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
       <Contact />
-      <main className="px-5 sm:px-20 lg:px-32">{children}</main>
+      <Navbar />
+      <main className="px-2 sm:px-20 text-lg pt-8">{children}</main>
       <Footer />
     </div>
   );

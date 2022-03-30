@@ -18,9 +18,10 @@ const Contact = () => {
                 href="https://github.com/Jofay-zs"
                 target="_blank"
                 rel="noreferrer"
-                className="hover:text-gray-100/50 hover:text-2xl"
+                className="hover:text-gray-100/60"
+                title="Jofay's Github"
               >
-                <FontAwesomeIcon icon={faGithub} />
+                <FontAwesomeIcon icon={faGithub} className="hover:rotate-12" />
               </a>
             </li>
             <li>
@@ -28,9 +29,10 @@ const Contact = () => {
                 href="https://www.linkedin.com/in/jofay-zs-174369217"
                 target="_blank"
                 rel="noreferrer"
-                className="hover:text-gray-100/50 hover:text-2xl"
+                className="hover:text-gray-100/60"
+                title="Jofay's Linkedin"
               >
-                <FontAwesomeIcon icon={faLinkedin} />
+                <FontAwesomeIcon icon={faLinkedin} className="hover:rotate-12" />
               </a>
             </li>
             <div className="w-1 flex justify-center items-center my-5">
@@ -41,17 +43,19 @@ const Contact = () => {
                 href="https://twitter.com/Jofay_zs"
                 target="_blank"
                 rel="noreferrer"
-                className="hover:text-gray-100/50 hover:text-2xl"
+                className="hover:text-gray-100/60"
+                title="Jofay's Twitter"
               >
-                <FontAwesomeIcon icon={faTwitter} />
+                <FontAwesomeIcon icon={faTwitter} className="hover:rotate-12" />
               </a>
             </li>
             <li>
               <a
                 href="mailto:jofayzs19@gmail.com"
-                className="hover:text-gray-100/50 hover:text-2xl"
+                className="hover:text-gray-100/60"
+                title="Jofay's mail"
               >
-                <FontAwesomeIcon icon={faEnvelope} />
+                <FontAwesomeIcon icon={faEnvelope} className="hover:rotate-12" />
               </a>
             </li>
           </ul>

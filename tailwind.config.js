@@ -13,6 +13,7 @@ module.exports = {
       blue: colors.blue,
       amber: colors.amber,
       fuchsia: colors.fuchsia,
+      code: "#282c34",
     },
     extend: {},
   },

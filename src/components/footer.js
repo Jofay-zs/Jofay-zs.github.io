@@ -9,7 +9,7 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
   return (
-    <footer className="w-full h-full sm:px-20 px-3 text-gray-300">
+    <footer className="w-full h-full sm:px-20 px-3 text-gray-300 mt-10">
       <section className="border-t-2 flex flex-col sm:flex-row justify-center items-center sm:justify-between sm:px-10 pt-4 sm:pt-10">
         <div className="font-bold pb-2 sm:pb-0">
           © 2022 by @Jofay-zs. All rights reserved.
@@ -20,7 +20,7 @@ const Footer = () => {
               href="https://github.com/Jofay-zs"
               target="_blank"
               rel="noreferrer"
-              className="hover:text-gray-100/50 hover:text-2xl mx-2"
+              className="hover:text-gray-100/60 mx-2"
             >
               <FontAwesomeIcon icon={faGithub} />
             </a>
@@ -30,7 +30,7 @@ const Footer = () => {
               href="https://www.linkedin.com/in/jofay-zs-174369217"
               target="_blank"
               rel="noreferrer"
-              className="hover:text-gray-100/50 hover:text-2xl mx-2"
+              className="hover:text-gray-100/60 mx-2"
             >
               <FontAwesomeIcon icon={faLinkedin} />
             </a>
@@ -40,7 +40,7 @@ const Footer = () => {
               href="https://twitter.com/Jofay_zs"
               target="_blank"
               rel="noreferrer"
-              className="hover:text-gray-100/50 hover:text-2xl mx-2"
+              className="hover:text-gray-100/60 mx-2"
             >
               <FontAwesomeIcon icon={faTwitter} />
             </a>
@@ -48,7 +48,7 @@ const Footer = () => {
           <span>
             <a
               href="mailto:jofayzs19@gmail.com"
-              className="hover:text-gray-100/50 hover:text-2xl mx-2"
+              className="hover:text-gray-100/60 mx-2"
             >
               <FontAwesomeIcon icon={faEnvelope} />
             </a>
