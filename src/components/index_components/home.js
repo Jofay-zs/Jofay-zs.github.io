@@ -8,8 +8,8 @@ const Home = () => {
     >
       <div className="z-30 flex flex-col w-full h-full justify-center items-start sm:px-20">
         <div className="flex text-7xl my-2 font-extrabold mb-6">Jofay-zs</div>
-        <div className="h-1">
-          <div className="w-96 h-1/2 flex bg-gradient-to-r from-red-500 to-fuchsia-500"></div>
+        <div className="h-1 w-full">
+          <div className="w-full sm:w-96 h-1/2 flex bg-gradient-to-r from-red-500 to-fuchsia-500"></div>
         </div>
         <div className="text-2xl font-light">
           Web developer and learning enthusiast

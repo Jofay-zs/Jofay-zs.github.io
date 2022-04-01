@@ -88,7 +88,7 @@ export const renderers = {
   ),
   table_cell: ({ children }) => <td className="px-2 border">{children}</td>,
   code: ({ children }) => (
-    <code className="bg-code overflow-x-auto p-3 rounded-lg text-sm my-5">
+    <code className="bg-code overflow-x-auto px-3 py-1 rounded-lg text-sm my-5">
       {children}
     </code>
   ),

@@ -47,17 +47,19 @@ const Portfolio = () => {
 
           return (
             <article className="w-full h-60" key={project.id}>
-              <div class="relative overflow-hidden bg-no-repeat bg-cover max-w-xs scale-95 transition duration-500 ease-in-out hover:scale-105">
+              <div className="relative overflow-hidden bg-no-repeat bg-cover max-w-xs scale-95 transition duration-500 ease-in-out hover:scale-105">
                 <GatsbyImage
                   image={image}
                   alt={project.image[0].url}
                   className="max-w-xs"
                 />
-                <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden opacity-0 transition duration-500 ease-in-out bg-main/80 hover:opacity-100 flex flex-col justify-end p-2">
+                <div className="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden opacity-0 transition duration-500 ease-in-out bg-main/80 hover:opacity-100 flex flex-col justify-end p-2">
                   <div className="absolute top-2 right-2 text-base flex">
                     <a
                       href={project.demo}
                       className="bg-gray-main from-red-500 to to-fuchsia-500 w-9 h-8 flex justify-center items-center rounded-full m-1 group hover:w-auto hover:px-2 hover:bg-gradient-to-r"
+                      target="_blank"
+                      rel="noreferrer"
                     >
                       <FontAwesomeIcon icon={faEye} />
                       <span className="hidden group-hover:flex text-sm font-bold ml-1">
@@ -67,6 +69,8 @@ const Portfolio = () => {
                     <a
                       href={project.sourceCode}
                       className="bg-gray-main from-red-500 to to-fuchsia-500 w-9 h-8 flex justify-center items-center rounded-full m-1 group hover:w-auto hover:px-2 hover:bg-gradient-to-r "
+                      target="_blank"
+                      rel="noreferrer"
                     >
                       <FontAwesomeIcon icon={faCode} />
                       <span className="hidden group-hover:flex text-sm font-bold ml-1">

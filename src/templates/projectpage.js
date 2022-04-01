@@ -32,6 +32,8 @@ const ProjectPage = ({ data: { graphCmsProject: project } }) => {
             <a
               href={project.sourceCode}
               className="bg-gray-800 rounded-t-lg px-2 py-1 mr-5 hover:text-red-500"
+              target="_blank"
+              rel="noreferrer"
             >
               <FontAwesomeIcon icon={faCode} className="hover:rotate-12" />{" "}
               Source code
@@ -39,6 +41,8 @@ const ProjectPage = ({ data: { graphCmsProject: project } }) => {
             <a
               href={project.demo}
               className="bg-gray-800 rounded-t-lg px-2 py-1 hover:text-fuchsia-500"
+              target="_blank"
+              rel="noreferrer"
             >
               <FontAwesomeIcon icon={faEye} className="hover:rotate-12" /> Demo
             </a>
